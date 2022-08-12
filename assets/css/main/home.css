@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif; }
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.header .header_container {
+  display: flex;
+  width: 100%; }
+  .header .header_container .header_left-logo {
+    width: 20%; }
+    .header .header_container .header_left-logo img {
+      width: 100px; }
+  .header .header_container .header_right-navbar {
+    width: 80%; }
+    .header .header_container .header_right-navbar ul {
+      flex-direction: row; }
+      .header .header_container .header_right-navbar ul li {
+        color: #4DAAB1;
+        list-style-type: none; }
