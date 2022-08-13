@@ -50,5 +50,10 @@
 @import "bootstrap/utilities/api";
 // scss-docs-end import-stack
 
+//plugin slick
+@import 'bootstrap/slick';
+@import 'bootstrap/slick-theme';
+
+@import 'main/home';
 @import 'main/header';
 @import 'main/footer';
