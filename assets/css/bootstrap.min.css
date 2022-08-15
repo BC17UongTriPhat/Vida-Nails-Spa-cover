@@ -10970,8 +10970,8 @@ textarea.form-control-lg {
   background: #dee2e6;
   margin-left: 10px;
   display: block;
-  height: 20px;
-  width: 20px;
+  height: 12px;
+  width: 12px;
   outline: none;
   line-height: 0px;
   font-size: 0px;
@@ -11089,37 +11089,60 @@ textarea.form-control-lg {
 
 /*#endregion */
 /*#region service */
-.service {
-  padding: 0 0;
-  width: 100%;
-}
-
 .service_slick_inside {
   margin: 0 -10px;
 }
 
-.service_slick_outside {
+.service_slick_inside {
+  display: block;
   overflow: hidden;
 }
 
 .service .img {
-  border: 1 solid #000;
+  position: relative;
+}
+
+.service .img .name {
+  width: 100%;
+  position: absolute;
+  color: brown;
+  font-weight: bold;
+  font-family: Dancing Script;
+  /* nam duoi va canh giua */
+  bottom: 0px;
+  height: 100%;
+}
+
+.service .img .name h3, .service .img .name .h3 {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.service_slick_slider .img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.service .service_slick_inside .service_slick_slider .img img {
   padding: 0 10px;
-  border-radius: 100px;
-}
-
-.service_slick_inside {
   width: 100%;
-  height: 100%;
+  border-radius: 10px;
+  display: block;
 }
 
-.service img {
-  width: 100%;
-  height: 100%;
-}
-
-.service img :hover {
+.service .img:hover img {
   transform: scale(1.1);
+  transition: all 0.6s;
+}
+
+.service .img:hover h3, .service .img:hover .h3 {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  align-items: center;
 }
 
 .service .slick-prev .slick-arrow,
@@ -11127,11 +11150,7 @@ textarea.form-control-lg {
   display: block;
 }
 
-.service ::marker {
-  display: flexbox;
-}
-
-.service button {
+.service .service_slick_slider .service button {
   display: none;
 }
 
@@ -11192,6 +11211,7 @@ textarea.form-control-lg {
 .information .container .row .item .information_inner p {
   font-size: 36px;
   font-family: Dancing Script;
+  font-weight: bold;
   color: #4DAAB1;
 }
 
