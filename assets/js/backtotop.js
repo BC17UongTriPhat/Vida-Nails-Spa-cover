@@ -31,3 +31,18 @@ $(function () {
 //   document.body.scrollTop = 0;
 //   document.documentElement.scrollTop = 0;
 // }
+
+$(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() != 0) {
+            $('btn').fadeIn();
+        } else {
+            $('btn').fadeOut();
+        }
+    });
+    $('btn').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 800);
+    });
+});
